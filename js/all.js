@@ -35,7 +35,7 @@ function filterCategory(e) {
   }
   renderData(showData);
 }
-
+/* global axios:writable */
 axios.get(url).then((res) => {
   data = res.data.filter((a) => a.作物名稱);
   renderData(data);
